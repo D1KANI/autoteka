@@ -28,9 +28,23 @@ body {
     margin: 0 auto;
 }
 
+.title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+}
+
 a {
     text-decoration: none;
     color: #000;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px 70px;
+
 }
 
 header {
@@ -61,20 +75,28 @@ header {
             margin-right: 0;
         }
     }
+    &.profile {
+        display: -webkit-box;
+        display: flex;
+        &__wrapper {
+            margin-left: 13px;
+            font-size: 18px;
+            line-height: 25px; 
     
-
-
-}
-
-.profile {
-    display: -webkit-box;
-    display: flex;
-    &__wrapper {
-        margin-left: 13px;
-        font-size: 18px;
-        line-height: 25px; 
-
+        }
     }
 }
+
+.header-content {
+    // &__form {
+        
+    // }
+    &__btn {
+        padding-right: 90px;
+        padding-left: 90px;
+    }
+
+}
+
 
 
