@@ -38,6 +38,9 @@ header {
   background: url(../img/header-bg.png) no-repeat top;
   background-size: cover; }
 
+.page-grey {
+  background-color: #F5F5F5; }
+
 .header-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,5 +146,30 @@ header {
   fill: #52B9E9; }
 .block-use__svg-alfastrah:hover path, .block-use__svg-alfastrah:active path {
   fill: #E31836; }
+
+.block-advantage__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 120px;
+  padding-bottom: 120px; }
+.block-advantage__item {
+  width: 30%;
+  text-align: center; }
+.block-advantage__description {
+  margin-top: 30px; }
+  .block-advantage__description_wrapper {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #292929; }
+  .block-advantage__description_text {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #2C3959; }
 
 /*# sourceMappingURL=style.css.map */

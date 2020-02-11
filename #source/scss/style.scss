@@ -56,6 +56,10 @@ header {
 
 }
 
+.page-grey {
+    background-color: #F5F5F5;
+}
+
 .header-top {
     display: -webkit-box;
     display: flex;
@@ -207,3 +211,30 @@ header {
     }
 }
 
+.block-advantage {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    &__item {
+        width: 30%;
+        text-align: center;
+    }
+    &__description {
+        margin-top: 30px;
+        &_wrapper {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 33px;
+            color: #292929;
+        }
+        &_text {
+            margin-top: 20px;      
+            font-size: 20px;
+            line-height: 28px;
+            color: #2C3959;
+        }
+    }
+}
