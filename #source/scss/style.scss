@@ -18,15 +18,9 @@ $grey: #F2F2F2;
     overflow: hidden;
 }
 
-// body {
-//     min-height: 1800px;
-//     background-color: #fff;
-// }
-
 .container {
     max-width: 1225px;
     margin: 0 auto;
-    color: #fff;
 }
 
 .title {
@@ -34,6 +28,13 @@ $grey: #F2F2F2;
     font-size: 36px;
     line-height: 49px;
     text-align: center;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 35px;
+    color: #292929;   
 }
 
 a {
@@ -54,6 +55,10 @@ header {
     background: url(../img/header-bg.png) no-repeat top;
     background-size:  cover;
 
+}
+
+.page {
+    background-color: #fff;
 }
 
 .page-grey {
@@ -237,4 +242,59 @@ header {
             color: #2C3959;
         }
     }
+}
+
+.page-online {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+        .block-online {
+            width: 790px;
+            padding: 30px;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+            &__subtitle {
+                margin-bottom: 30px;
+            }
+            &__table {
+                border-collapse: collapse;
+                width: 100%;
+                tr {
+                    border-bottom: 1px solid #EBEBEB;
+                    width: 790px;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    
+                    td {
+                        padding: 10px 16px;
+                        max-width: 190px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        &:last-child {
+                            text-align: right;
+                        }
+                        &:nth-child(2) {
+                            padding-right: 30px;
+                            padding-left: 0;
+                        }
+                        a {
+                            text-decoration: underline;
+                            color: $blue;
+                        }
+                        &:nth-child(3) {
+                            padding-right: 30px;
+                        }
+                        
+                    }
+    
+                }
+                
+                
+            }
+        }
+
+    }
+    
 }

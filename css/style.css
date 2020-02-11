@@ -13,14 +13,19 @@
 
 .container {
   max-width: 1225px;
-  margin: 0 auto;
-  color: #fff; }
+  margin: 0 auto; }
 
 .title {
   font-weight: 600;
   font-size: 36px;
   line-height: 49px;
   text-align: center; }
+
+.subtitle {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  color: #292929; }
 
 a {
   text-decoration: none;
@@ -37,6 +42,9 @@ a {
 header {
   background: url(../img/header-bg.png) no-repeat top;
   background-size: cover; }
+
+.page {
+  background-color: #fff; }
 
 .page-grey {
   background-color: #F5F5F5; }
@@ -171,5 +179,45 @@ header {
     font-size: 20px;
     line-height: 28px;
     color: #2C3959; }
+
+.page-online .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 70px; }
+  .page-online .container .block-online {
+    width: 790px;
+    padding: 30px;
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05); }
+    .page-online .container .block-online__subtitle {
+      margin-bottom: 30px; }
+    .page-online .container .block-online__table {
+      border-collapse: collapse;
+      width: 100%; }
+      .page-online .container .block-online__table tr {
+        border-bottom: 1px solid #EBEBEB;
+        width: 790px; }
+        .page-online .container .block-online__table tr:last-child {
+          border-bottom: none; }
+        .page-online .container .block-online__table tr td {
+          padding: 10px 16px;
+          max-width: 190px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+          .page-online .container .block-online__table tr td:last-child {
+            text-align: right; }
+          .page-online .container .block-online__table tr td:nth-child(2) {
+            padding-right: 30px;
+            padding-left: 0; }
+          .page-online .container .block-online__table tr td a {
+            text-decoration: underline;
+            color: #2D81FF; }
+          .page-online .container .block-online__table tr td:nth-child(3) {
+            padding-right: 30px; }
 
 /*# sourceMappingURL=style.css.map */
