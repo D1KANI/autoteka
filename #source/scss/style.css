@@ -2,14 +2,147 @@
   padding: 0;
   margin: 0;
   border: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Open Sans, serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.page-wrapper {
+  overflow: hidden;
+}
 
 body {
-  min-height: 1080px;
-  background-color: #fff; }
+  min-height: 1800px;
+  background-color: #fff;
+}
 
 .container {
-  max-width: 1226px;
-  margin: 10px auto;
-  border: 20px solid blue;
-  background-color: #EAEAEA; }
+  max-width: 1225px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 20px 70px;
+  background-color: #FCD302;
+  cursor: pointer;
+}
+
+header {
+  background: url(../img/header-bg.png) no-repeat top;
+  background-size: cover;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  color: #FFFFFF;
+  padding: 20px 0;
+}
+
+.header-top__logo a {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.header-top a {
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.header-top a:last-child {
+  margin-right: 0;
+}
+
+.header-top__link {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile__wrapper {
+  margin-left: 13px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header-content__title {
+  color: white;
+  margin-top: 75px;
+}
+
+.header-content__form {
+  margin-top: 75px;
+  min-width: 100%;
+  position: relative;
+  width: 70px;
+}
+
+.header-content__input {
+  position: relative;
+  z-index: 1;
+  min-width: 100%;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000;
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+
+.header-content__input:placeholder-shown {
+  color: #737373;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.header-content__btn {
+  position: absolute;
+  padding-right: 90px;
+  padding-left: 90px;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.header-content__text {
+  margin-top: 70px;
+  padding-bottom: 80px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+}
+/*# sourceMappingURL=style.css.map */
