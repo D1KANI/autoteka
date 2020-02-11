@@ -6,7 +6,8 @@
           box-sizing: border-box;
   font-family: Open Sans, serif;
   font-weight: 400;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 22px; }
 
 .page-wrapper {
   overflow: hidden; }
@@ -187,7 +188,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 70px; }
   .page-online .container .block-online {
     width: 790px;
     padding: 30px;
@@ -214,10 +216,93 @@ header {
           .page-online .container .block-online__table tr td:nth-child(2) {
             padding-right: 30px;
             padding-left: 0; }
+          .page-online .container .block-online__table tr td:nth-child(3) {
+            padding-right: 30px; }
           .page-online .container .block-online__table tr td a {
             text-decoration: underline;
             color: #2D81FF; }
-          .page-online .container .block-online__table tr td:nth-child(3) {
-            padding-right: 30px; }
+  .page-online .container .block-sources {
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    margin-left: 36px;
+    padding: 30px; }
+    .page-online .container .block-sources__subtitle {
+      margin-bottom: 30px; }
+    .page-online .container .block-sources__list {
+      list-style-type: none; }
+    .page-online .container .block-sources__item {
+      padding-left: 40px;
+      position: relative;
+      font-size: 16px;
+      line-height: 22px;
+      padding-bottom: 20px;
+      color: #292929; }
+      .page-online .container .block-sources__item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url(../img/succsess.svg) no-repeat center; }
+
+.block-rewiews {
+  padding-bottom: 90px; }
+  .block-rewiews__subtitle {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px; }
+  .block-rewiews__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 135px; }
+  .block-rewiews__item {
+    margin-right: 43px; }
+    .block-rewiews__item:last-child {
+      margin-right: 0; }
+  .block-rewiews__btn {
+    display: block;
+    margin: 0 auto; }
+
+.rewiew__box {
+  background-color: #fff;
+  position: relative;
+  padding: 30px 30px 25px;
+  text-align: center; }
+  .rewiew__box .border {
+    display: block;
+    background-color: #2D81FF;
+    width: 200px;
+    height: 2px;
+    margin: 30px auto 20px; }
+.rewiew__avatar {
+  margin-bottom: 10px; }
+.rewiew__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #2C3959;
+  margin-bottom: 15px; }
+.rewiew__car {
+  color: #2C3959;
+  margin-bottom: 10px; }
+.rewiew__id {
+  position: relative;
+  color: #2D81FF;
+  display: inline; }
+  .rewiew__id::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: -30px;
+    background: url(../img/car.svg) no-repeat center; }
 
 /*# sourceMappingURL=style.css.map */
