@@ -354,12 +354,13 @@ header {
         position: relative;
         padding: 30px 30px 25px;
         text-align: center;
+        height: 500px;
         .border {
             display: block;
             background-color: $blue;
             width: 200px;
             height: 2px;
-            margin: 30px auto 20px;
+            margin: 0 auto 20px;
         }
     }
     &__avatar {
@@ -378,8 +379,15 @@ header {
         margin-bottom: 10px;
         
     }
+    &__footer {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translate(-50%);
+    }
     &__id {
         position: relative;
+        left: 5px;
         color: $blue;
         display: inline;
         &::before {
@@ -393,5 +401,96 @@ header {
             background: url(../img/car.svg) no-repeat center;
         }
     }
-    
+}
+
+.block-FAQ {
+    &__subtitle {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    &__item {
+        position: relative;
+        padding-bottom: 25px;
+        padding-left: 38px;
+    }
+    &__btn {
+        display: block;
+        margin: 50px auto;
+    }
+    &__question {
+        cursor: pointer;
+        -moz-user-select: none; /* Mozilla Firefox */
+        -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+        -o-user-select: none; /* Opera Presto (не поддерживается) */
+        -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #2D81FF;
+            border-radius: 1.5px;
+            left: 8px;
+            top: 12px;
+            width: 14px;
+            height: 3px;
+            transform: rotate(-45deg);
+        }
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: #2D81FF;
+            border-radius: 4px;
+            left: 0;
+            top: 12px;
+            width: 14px;
+            height: 3px;
+            transform: rotate(45deg);
+        }
+        color: $blue;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        &_active {
+            color: #292929;
+            &::before {
+                transform: rotate(45deg);
+                background-color: #292929;
+            }
+            &::after {
+                transform: rotate(-45deg);
+                background-color: #292929;
+            }
+        }
+    }
+    &__answer {
+        display: none;
+        position: relative;
+        margin-top: 20px;
+        width: 1000px;
+        padding: 15px 30px;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        &::before,
+        &::after {
+            content: ''; 
+            position: absolute;
+            left: 20px; top: -20px;
+            border: 10px solid transparent;
+            border-top: 11px solid #E0E0E0;
+            transform: rotate(180deg);
+
+        }
+        &::after {
+            border-top: 10px solid white;
+            top: -18px; 
+           }
+
+
+        &_header {
+            padding-bottom: 18px;
+        }
+    }
+
 }
