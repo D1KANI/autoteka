@@ -266,7 +266,9 @@ header {
         justify-content: space-between;
     margin-bottom: 135px; }
   .block-rewiews__item {
-    margin-right: 43px; }
+    margin-right: 43px;
+    height: 500px;
+    text-align: center; }
     .block-rewiews__item:last-child {
       margin-right: 0; }
   .block-rewiews__btn {
@@ -278,7 +280,7 @@ header {
   position: relative;
   padding: 30px 30px 25px;
   text-align: center;
-  height: auto; }
+  height: 500px; }
   .rewiew__box .border {
     display: block;
     background-color: #2D81FF;
@@ -286,24 +288,26 @@ header {
     height: 2px;
     margin: 0 auto 20px; }
 .rewiew__avatar {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto; }
+  .rewiew__avatar img {
+    margin: 0 auto; }
+.rewiew__footer {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%); }
 .rewiew__name {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   color: #2C3959;
   margin-bottom: 15px; }
-.rewiew__content {
-  padding-bottom: 100px; }
 .rewiew__car {
   color: #2C3959;
   margin-bottom: 10px; }
-.rewiew__footer {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%); }
 .rewiew__id {
   position: relative;
   left: 5px;
@@ -472,9 +476,7 @@ footer {
 
 @media screen and (max-width: 1366px) {
   .container {
-    max-width: 100%;
-    padding-left: 70px;
-    padding-right: 70px; }
+    max-width: 100%; }
 
   .block-use__row {
     -ms-flex-wrap: wrap;
@@ -503,5 +505,10 @@ footer {
 
   .block-FAQ__answer {
     width: 100%; } }
+@media screen and (max-width: 1185px) {
+  .container {
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

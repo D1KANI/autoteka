@@ -348,6 +348,8 @@ header {
     }
     &__item {
        margin-right: 43px;
+       height: 500px;
+       text-align: center;
        &:last-child {
            margin-right: 0;
        }
@@ -364,7 +366,7 @@ header {
         position: relative;
         padding: 30px 30px 25px;
         text-align: center;
-        height: auto;
+        height: 500px;
         .border {
             display: block;
             background-color: $blue;
@@ -375,6 +377,17 @@ header {
     }
     &__avatar {
         margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        img {
+            margin: 0 auto;
+        }
+    }
+    &__footer {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translate(-50%);
     }
     &__name {
         font-weight: 600;
@@ -384,21 +397,10 @@ header {
         margin-bottom: 15px;
         
     }
-    &__content {
-        
-       padding-bottom: 100px;
-    }
     &__car {
         color: #2C3959;
         margin-bottom: 10px;
         
-    }
-    &__footer {
-        position: absolute;
-        bottom: 25px;
-        left: 50%;
-        -webkit-transform: translate(-50%);
-                transform: translate(-50%);
     }
     &__id {
         position: relative;
@@ -596,8 +598,6 @@ footer {
 @media screen and (max-width: 1366px) {
     .container {
         max-width: 100%;
-        padding-left: 70px;
-        padding-right: 70px;
     }
     .block-use {
         &__row {
@@ -630,5 +630,13 @@ footer {
         &__answer {
             width: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    .container {
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 }
